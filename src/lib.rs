@@ -25,10 +25,6 @@ impl HasVec {
 #[no_mangle]
 pub extern fn test_vec() -> *mut HasVec {
     let strings =  vec!["these", "are", "some", "strings"];
-//.iter()
-        //.map(|s| s.to_string())
-        //.collect::<Vec<String>>();
-
     let has_vec = HasVec::new(strings);
 	Box::into_raw(Box::new(has_vec))
 }
@@ -43,12 +39,3 @@ mod tests {
         
     }
 }
-//fn main() {
-    //let test  = test_vec();
-    //for t in test {
-        //println!("{}", t);
-    //}
-    ////let input = 4;
-    ////let output = unsafe { double_input(input) };
-    ////println!("{} * 2 = {}", input, output);
-//}
