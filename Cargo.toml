@@ -1,0 +1,11 @@
+[package]
+name = "rust-ffi-vec"
+version = "0.1.0"
+authors = ['colin rofls']
+
+[dependencies]
+libc = "*"
+
+[lib]
+name = "vec_test"
+crate-type = ["staticlib"]
